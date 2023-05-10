@@ -20,7 +20,7 @@ const ProfileFriendsList: React.FC<Props> = ({ userId, className }) => {
 
     return (
         <>
-            {isLoading && <ProfileFriendsLoader className={styles.loader} />}
+            {isLoading && <ProfileFriendsLoader />}
             {error && (
                 <Alert className={styles.alert} type={ALERT.ERROR}>
                     {error}

@@ -43,6 +43,7 @@ class PostService {
             const nextQuery = query(
                 collection(db, "posts"),
                 orderBy("date", "desc"),
+                where("userId", "in", [...user.friends, user.id]),
                 startAfter(lastVisible),
                 limit(limitNumber)
             );

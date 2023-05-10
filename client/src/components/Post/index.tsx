@@ -7,11 +7,11 @@ import { Link } from "react-router-dom";
 import { IPost } from "../../models/IPost";
 import { parseISO } from "../../helpers/parseISO";
 import { PROFILE_ROUTE } from "../../constants/routesPathnames";
-
-import styles from "./styles.module.scss";
 import { usePost } from "./usePost";
 import CheckAccess from "../CheckAccess";
 import { ROLES } from "../../constants/roles";
+
+import styles from "./styles.module.scss";
 
 type Props = {
     post: IPost;

@@ -1,4 +1,4 @@
-@import "../../../../assets/styles/vars.scss";
+@import "../../../../assets/styles/mixins.scss";
 
 .loaderWrapper {
     background-color: $white;
@@ -8,4 +8,7 @@
     justify-content: center;
     padding: 72px 0;
     margin-bottom: 15px;
+    @include mobile {
+        padding: 30px 0;
+    }
 }

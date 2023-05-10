@@ -8,12 +8,12 @@ import { Link } from "react-router-dom";
 import { MESSENGER_ROUTE, PROFILE_EDIT_ROUTE } from "../../../constants/routesPathnames";
 import { FiUserCheck, FiUserPlus } from "react-icons/fi";
 import { useProfileUser } from "./useProfileUser";
-import cn from "classnames";
-
-import styles from "./styles.module.scss";
 import Loader from "../../../components/Loader";
 import Alert from "../../../components/Alert";
 import { ALERT } from "../../../constants/alert";
+import cn from "classnames";
+
+import styles from "./styles.module.scss";
 
 type Props = {
     userId: string;

@@ -7,9 +7,9 @@ import { useSocketConnect } from "../../hooks/helpers/useSocketConnect";
 import { NEWS_ROUTE } from "../../constants/routesPathnames";
 import Alert from "../../components/Alert";
 import { ALERT } from "../../constants/alert";
+import { IRegistrationCredentials } from "../../models/Credentials";
 
 import styles from "./styles.module.scss";
-import { IRegistrationCredentials } from "../../models/Credentials";
 
 const RegistrationPage: React.FC = () => {
     const dispatch = useAppDispatch();
@@ -26,7 +26,7 @@ const RegistrationPage: React.FC = () => {
             firstName: firstName.trim(),
             lastName: lastName.trim(),
             email: email.trim(),
-            password: email.trim(),
+            password: password.trim(),
         };
 
         if (password !== confirmPassword) {

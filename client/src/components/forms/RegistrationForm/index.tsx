@@ -26,11 +26,11 @@ const RegistrationForm: React.FC<Props> = ({ onSubmit, clearError }) => {
     const navigate = useNavigate();
 
     const initialState: RegistrationFormValues = {
-        firstName: "Kirich",
-        lastName: "Legenda",
-        email: "kirich@mail.com",
-        password: "123123",
-        confirmPassword: "123123",
+        firstName: "",
+        lastName: "",
+        email: "",
+        password: "",
+        confirmPassword: "",
     };
 
     const { handleBlur, handleChange, handleSubmit, values, errors, touched, isSubmitting } = useFormik({

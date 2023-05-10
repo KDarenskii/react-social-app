@@ -46,6 +46,8 @@
 .imgPreview {
     width: 100%;
     display: block;
+    max-height: 350px;
+    object-fit: cover;
 }
 .footer {
     display: flex;
