@@ -1,0 +1,89 @@
+@import "../../../assets/styles/mixins.scss";
+
+$chatHeaderHeight: 56px;
+$chatFooterHeigth: 66px;
+
+.chat {
+    height: 100%;
+}
+.loaderWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: calc(100vh - 2 * $pageOffsetPadding - $headerHeight);
+    background-color: $white;
+    border-radius: 10px;
+}
+.header {
+    height: $chatHeaderHeight;
+    border-bottom: 1px solid $grey;
+    border-radius: 10px 10px 0 0;
+    background-color: $grey;
+}
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    height: 100%;
+    border-radius: 10px 10px 0 0;
+    background-color: $white;
+    position: relative;
+    z-index: 20;
+}
+.backButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    height: 100%;
+    padding: 0 15px 0 10px;
+    cursor: pointer;
+    border-radius: 0 20px 20px 0;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: #f3f7ff;
+    }
+}
+.backIcon {
+    height: 20px;
+    width: 20px;
+    fill: $darkgrey;
+}
+.backText {
+    font-size: 15px;
+    color: $darkgrey;
+}
+.title {
+    text-align: center;
+}
+.name {
+    display: inline-block;
+    color: $black;
+    font-size: 15px;
+    font-weight: 500;
+    margin-bottom: 2px;
+}
+.status {
+    font-size: 13px;
+    color: $darkgrey;
+}
+.avatar {
+    margin-right: 10px;
+    height: 40px;
+    width: 40px;
+}
+.messagesList {
+    display: flex;
+    flex-direction: column;
+    padding-bottom: 10px;
+    background-color: $white;
+    height: calc(100vh - 2 * $pageOffsetPadding - $headerHeight - $chatHeaderHeight - $chatFooterHeigth);
+    overflow: auto;
+}
+.messageItem {
+    padding: 10px 25px;
+    background-color: $white;
+    @include mobileMiddle {
+        padding: 10px;
+    }
+}

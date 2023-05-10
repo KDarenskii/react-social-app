@@ -1,0 +1,10 @@
+@import "../../../assets/styles/vars.scss";
+
+.content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: $darkgrey;
+    background-color: $white;
+    padding: 40px 20px;
+}

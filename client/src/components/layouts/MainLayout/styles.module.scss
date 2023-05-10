@@ -1,0 +1,24 @@
+@import "../../../assets/styles/mixins.scss";
+
+.layout {
+    height: 100%;
+    width: 100%;
+}
+.wrapper {
+    display: grid;
+    grid-template-columns: 180px 1fr 250px;
+    column-gap: 20px;
+    height: 100%;
+    padding-top: calc($pageOffsetPadding + $headerHeight);
+    @include tablet {
+        grid-template-columns: 180px minmax(300px, 560px);
+        justify-content: center;
+    }
+    @include mobile {
+        grid-template-columns: minmax(300px, 560px);
+    }
+}
+.main {
+    height: 100%;
+    padding-bottom: 20px;
+}

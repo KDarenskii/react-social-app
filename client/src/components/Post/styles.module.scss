@@ -1,0 +1,136 @@
+@import "../../assets/styles/vars.scss";
+
+.post {
+    padding: 15px 20px;
+    border-radius: 10px;
+    background-color: $white;
+}
+.header {
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+    margin-bottom: 15px;
+}
+.author {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.avatar {
+    height: 40px;
+    width: 40px;
+}
+.name {
+    display: inline-block;
+    font-size: 15px;
+    font-weight: 500;
+    color: $darkblue;
+    margin-bottom: 3px;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.time {
+    color: $darkgrey;
+    font-size: 13px;
+}
+.settings {
+    align-self: flex-start;
+    position: relative;
+    padding: 5px 0 5px 10px;
+    &:hover {
+        cursor: pointer;
+        .settingsMenu {
+            opacity: 1;
+            visibility: visible;
+            pointer-events: all;
+            top: 100%;
+        }
+    }
+}
+.settingsIcon {
+    display: block;
+    width: 20px;
+    height: 20px;
+    fill: $darkgrey;
+}
+.settingsMenu {
+    position: absolute;
+    top: 130%;
+    right: 0;
+    z-index: 5;
+    padding: 5px 0;
+    background-color: $white;
+    box-shadow: 0px 3px 24px rgb(0 0 0 / 21%);
+    border-radius: 10px;
+    overflow: hidden;
+    opacity: 0;
+    visibility: hidden;
+    pointer-events: none;
+    transition: opacity 0.3s ease, visibility 0.3s ease, top 0.3s ease;
+}
+.settingsItem {
+    min-width: 110px;
+    font-size: 13px;
+    padding: 10px;
+    transition: background-color 0.15s ease;
+    &:hover {
+        cursor: pointer;
+        background-color: $grey;
+    }
+}
+.text {
+    font-size: 15px;
+    color: $black;
+    margin-bottom: 15px;
+}
+.img {
+    width: 100%;
+    max-width: 100%;
+    max-height: 350px;
+    height: 100%;
+    object-fit: cover;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding-top: 10px;
+}
+.reactionButton {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 5px 15px;
+    border-radius: 20px;
+    background-color: $grey;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: darken($grey, 3%);
+    }
+    &.active {
+        background-color: rgba($red, 0.3);
+    }
+}
+.likeIcon {
+    height: 25px;
+    width: 25px;
+    fill: $darkgrey;
+    &.active {
+        fill: $red;
+    }
+}
+.commentIcon {
+    height: 25px;
+    width: 25px;
+    fill: $darkgrey;
+}
+.reactionCounter {
+    font-size: 14px;
+    color: $darkgrey;
+    font-weight: 500;
+    &.active {
+        color: $white;
+    }
+}

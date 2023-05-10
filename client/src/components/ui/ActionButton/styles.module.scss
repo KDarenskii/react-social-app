@@ -1,0 +1,66 @@
+@import "../../../assets/styles/vars.scss";
+
+.button {
+    display: block;
+    height: 40px;
+    font-size: 1rem;
+    padding: 0.375rem 1.7rem;
+    border-radius: 5px;
+    transition: background-color 0.15s ease;
+    &:disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+    &.sm {
+        font-size: 14px;
+        height: 30px;
+        padding: 0.3rem 1rem;
+    }
+    &.info {
+        background-color: $blue;
+        color: $white;
+        &:hover {
+            background-color: lighten($blue, 5%);
+        }
+        &:focus {
+            background-color: lighten($blue, 5%);
+        }
+    }
+    &.success {
+        background-color: $green;
+        color: $white;
+        &:hover {
+            background-color: lighten($green, 5%);
+        }
+        &:focus {
+            background-color: lighten($green, 5%);
+        }
+    }
+    &.danger {
+        background-color: $red;
+        color: $white;
+        &:hover {
+            background-color: lighten($red, 5%);
+        }
+        &:focus {
+            background-color: lighten($red, 5%);
+        }
+    }
+    &.warning {
+        background-color: $yellow;
+        color: $white;
+        &:hover {
+            background-color: lighten($yellow, 5%);
+        }
+        &:focus {
+            background-color: lighten($yellow, 5%);
+        }
+    }
+    &.light {
+        color: #346297;
+        background-color: #e5ebf1;
+        &:hover {
+            background-color: darken(#e5ebf1, 3%);
+        }
+    }
+}

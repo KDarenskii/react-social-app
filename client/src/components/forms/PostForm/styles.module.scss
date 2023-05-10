@@ -1,0 +1,76 @@
+@import "../../../assets/styles/vars.scss";
+
+.form {
+    border-radius: 10px;
+    padding: 20px;
+    background-color: $white;
+}
+.label {
+    display: block;
+    margin-bottom: 15px;
+    border-bottom: 1px solid $grey;
+}
+.textarea {
+    width: 100%;
+    min-height: 50px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    resize: none;
+    overflow: hidden;
+    &::placeholder {
+        font-size: 20px;
+        color: $darkgrey;
+    }
+}
+.imgWrapper {
+    margin-bottom: 20px;
+    position: relative;
+}
+.removeIconWrapper {
+    width: 25px;
+    height: 25px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1;
+    background-color: $black;
+    border-bottom-left-radius: 10px;
+    cursor: pointer;
+}
+.removeIcon {
+    transform: translate3d(1px, 2px, 0);
+    path {
+        stroke: $white;
+    }
+}
+.imgPreview {
+    width: 100%;
+    display: block;
+}
+.footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.actionBtn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 5px;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: $grey;
+    }
+}
+.actionIcon {
+    fill: $darkgrey;
+    width: 20px;
+    height: 20px;
+}
+.submitBtn {
+    font-size: 14px;
+    height: 30px;
+    padding: 0.3rem 1rem;
+}

@@ -1,0 +1,19 @@
+@import "../../../assets/styles/vars.scss";
+
+.postsList {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.form {
+    margin-bottom: 20px;
+}
+.loader {
+    margin: 15px auto;
+}
+.endListMessage {
+    font-size: 15px;
+    text-align: center;
+    color: $darkgrey;
+    margin-top: 15px;
+}

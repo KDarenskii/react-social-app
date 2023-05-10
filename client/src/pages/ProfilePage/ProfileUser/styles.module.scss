@@ -1,0 +1,142 @@
+@import "../../../assets/styles/mixins.scss";
+
+.loaderWrapper {
+    padding: 50px 0;
+    background-color: $white;
+    border-radius: 10px;
+    margin-bottom: 15px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.alert {
+    margin-bottom: 15px;
+}
+.body {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $white;
+    @include mobileMiddle {
+        flex-direction: column;
+        text-align: center;
+    }
+}
+.avatar {
+    width: 100px;
+    height: 100px;
+}
+.onlineIcon {
+    height: 10px;
+    width: 10px;
+    bottom: 10px;
+    right: 8px;
+}
+.profile {
+    flex: 1;
+}
+.name {
+    margin-bottom: 7px;
+    font-weight: 500;
+}
+.status {
+    font-size: 13px;
+    color: $black;
+    margin-bottom: 8px;
+    @include mobileMiddle {
+        font-size: 14px;
+    }
+}
+.description {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 14px;
+    color: #626d7a;
+}
+.descriptionIcon {
+    margin-right: 2px;
+    path {
+        stroke: #626d7a;
+    }
+    transform: translateY(1px);
+}
+.education,
+.city {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+}
+.education {
+    max-width: 118px;
+}
+.city {
+    max-width: 136px;
+}
+.moreBtn {
+    color: #626d7a;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.infoIcon {
+    height: 15px;
+    width: 15px;
+    margin-right: 3px;
+    transform: translateY(2px);
+}
+.actions {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-left: auto;
+    @include mobileMiddle {
+        width: 100%;
+        justify-content: center;
+    }
+}
+.messageLink {
+    display: block;
+    @include mobileMiddle {
+        width: 50%;
+    }
+}
+.messageBtn {
+    background-color: $darkblue;
+    color: $white;
+    width: 100%;
+    font-size: 13px;
+    padding: 0.3rem 0.7rem;
+    height: 30px;
+    &:hover {
+        background-color: lighten($darkblue, 5%);
+    }
+}
+.friendBtn {
+    height: 30px;
+    width: 30px;
+    background-color: #e5ebf1;
+    border-radius: 5px;
+    padding: 6px;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: darken(#e5ebf1, 3%);
+    }
+}
+.friendIcon {
+    height: 100%;
+    width: 100%;
+    stroke: $darkblue;
+}
+.editLink {
+    align-self: flex-start;
+    @include mobileMiddle {
+        display: block;
+        width: 100%;
+    }
+}
+.editBtn {
+    width: 100%;
+}

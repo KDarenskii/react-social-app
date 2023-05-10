@@ -1,0 +1,38 @@
+@import "../../../../assets/styles/vars.scss";
+
+$chatFooterHeigth: 66px;
+
+.body {
+    height: $chatFooterHeigth;
+    border-top: 1px solid $grey;
+    background-color: $grey;
+}
+.bodyWrapper {
+    border-radius: 0 0 10px 10px;
+    background-color: $white;
+    padding: 13px 20px;
+    position: relative;
+    z-index: 20;
+}
+.form {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+}
+.input {
+    width: 100%;
+    background-color: $white;
+    font-size: 14px;
+    border-color: #e0dfdf;
+}
+.sendIcon {
+    height: 20px;
+    width: 20px;
+    transform: rotate(90deg);
+    fill: $darkgrey;
+    transition: fill 0.15s ease;
+    border-color: $grey;
+    &:hover {
+        fill: $blue;
+    }
+}

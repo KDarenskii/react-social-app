@@ -1,0 +1,53 @@
+@import "./vars.scss";
+
+@mixin control {
+    border: 1px solid #e2e0e0;
+    padding: 0.7rem;
+    color: $black;
+    background-color: $white;
+    outline: none;
+    border-radius: 5px;
+    font-size: 16px;
+    &:focus {
+        border-color: $blue;
+    }
+    &:disabled {
+        opacity: 0.5;
+    }
+    &::placeholder {
+        color: $darkgrey;
+    }
+}
+
+@mixin ellipsis($maxWidth) {
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    overflow: hidden;
+    max-width: $maxWidth;
+}
+
+@mixin pc {
+    @media (max-width: $pc) {
+        @content;
+    }
+}
+@mixin tablet {
+    @media (max-width: $tablet) {
+        @content;
+    }
+}
+@mixin mobile {
+    @media (max-width: $mobile) {
+        @content;
+    }
+}
+@mixin mobileMiddle {
+    @media (max-width: $mobileMiddle) {
+        @content;
+    }
+}
+@mixin mobileSmall {
+    @media (max-width: $mobileSmall) {
+        @content;
+    }
+}

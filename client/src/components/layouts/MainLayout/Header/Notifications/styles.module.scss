@@ -1,0 +1,44 @@
+@import "../../../../../assets/styles/vars.scss";
+
+.notices {
+    position: relative;
+}
+.noticeButton {
+    position: relative;
+    padding: 5px;
+    border-radius: 100%;
+    transition: background-color 0.15s ease, fill 0.15s ease;
+    &:hover {
+        background-color: #e5e5e5;
+        .noticeIcon {
+            fill: $darkblue;
+        }
+    }
+    &.active {
+        background-color: #e5e5e5;
+        .noticeIcon {
+            fill: $darkblue;
+        }
+    }
+}
+.bellIcon {
+    display: block;
+    height: 25px;
+    width: 25px;
+    fill: $darkblue;
+}
+.noticeCounter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: 1px;
+    right: 1px;
+    width: 16px;
+    height: 16px;
+    font-size: 13px;
+    font-weight: 500;
+    color: $white;
+    background-color: $red;
+    border-radius: 100%;
+}

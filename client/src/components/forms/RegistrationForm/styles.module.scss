@@ -1,0 +1,21 @@
+@import "../../../assets/styles/vars.scss";
+
+.label {
+    display: block;
+    margin-bottom: 10px;
+}
+.input {
+    width: 100%;
+}
+.submitBtn {
+    width: 100%;
+}
+.message {
+    font-size: 13px;
+    text-align: center;
+    color: $darkgrey;
+    margin: 10px 0;
+}
+.fieldError {
+    margin-top: 3px;
+}

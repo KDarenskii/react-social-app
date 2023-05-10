@@ -1,0 +1,11 @@
+@import "../../../../assets/styles/vars.scss";
+
+.loaderWrapper {
+    background-color: $white;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 72px 0;
+    margin-bottom: 15px;
+}

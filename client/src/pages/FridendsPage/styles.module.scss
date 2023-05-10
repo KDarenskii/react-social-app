@@ -1,0 +1,59 @@
+@import "../../assets/styles/mixins.scss";
+
+.pageWrapper {
+    border-radius: 10px;
+    overflow: hidden;
+    @include mobile {
+        padding-bottom: $mobileNavHeight;
+    }
+}
+.header {
+    background-color: $white;
+    padding: 15px;
+    border-bottom: 1px solid $grey;
+    @include mobileMiddle {
+        padding: 15px;
+    }
+}
+.headerWrapper {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+    @include mobileSmall {
+        flex-direction: column-reverse;
+    }
+}
+.title {
+    text-align: center;
+    font-size: 18px;
+}
+.tabs {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.tabButton {
+    padding: 10px;
+    font-size: 15px;
+    color: $darkgrey;
+    border-radius: 10px;
+    transition: color 0.15s ease, background-color 0.15s ease;
+    &.active {
+        color: $white;
+        background-color: $darkblue;
+    }
+    @include mobileMiddle {
+        padding: 9px 7px;
+        font-size: 14px;
+    }
+}
+.findButton {
+    font-size: 13px;
+    height: 30px;
+    padding: 0.375rem 0.7rem;
+    margin-left: auto;
+}
+.searchWrapper {
+    margin-top: 10px;
+}

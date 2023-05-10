@@ -1,0 +1,46 @@
+@import "../../../../../../assets/styles/vars.scss";
+
+.noticesMenu {
+    width: 400px;
+    position: absolute;
+    top: 40px;
+    right: 0;
+    background-color: $white;
+    border: 1px solid $grey;
+    border-radius: 0 0 10px 10px;
+    overflow: hidden;
+    box-shadow: 0 20px 40px 0 rgb(0 0 0 / 30%);
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s linear, top 0.15s ease;
+    &.active {
+        opacity: 1;
+        pointer-events: all;
+        top: 50px;
+    }
+}
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 15px;
+    padding: 10px;
+    border-bottom: 1px solid $grey;
+}
+.headerTitle {
+    font-size: 14px;
+    font-weight: 500;
+}
+.markAllButton {
+    color: $blue;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.noticesList {
+    display: flex;
+    flex-direction: column;
+    max-height: 80%;
+    overflow: auto;
+    max-height: 380px;
+}

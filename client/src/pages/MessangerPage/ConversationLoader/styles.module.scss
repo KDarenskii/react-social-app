@@ -1,0 +1,12 @@
+@import "../../../assets/styles/vars.scss";
+
+.loadersList {
+    background-color: $white;
+    border-radius: 0 0 10px 10px;
+}
+.loaderItem {
+    border-bottom: 1px solid $grey;
+}
+.loader {
+    width: 100%;
+}

@@ -1,0 +1,139 @@
+@import "../../assets/styles/mixins.scss";
+
+.page {
+    @include mobile {
+        padding-bottom: $mobileNavHeight;
+    }
+}
+.alert {
+    margin-bottom: 15px;
+}
+.header {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    padding: 15px;
+    border-radius: 10px;
+    background-color: $white;
+    margin-bottom: 15px;
+    @include mobileMiddle {
+        flex-direction: column;
+    }
+}
+.headerWrapper {
+    flex: 1;
+    @include mobileMiddle {
+        width: 80%;
+    }
+    @include mobileSmall {
+        width: 100%;
+    }
+}
+.avatarWrapper {
+    height: 100px;
+    width: 100px;
+    position: relative;
+}
+.deleteIcon {
+    position: absolute;
+    top: -3px;
+    right: -5px;
+    width: 15px;
+    height: 15px;
+    cursor: pointer;
+}
+.avatarLabel {
+    display: block;
+    height: 100%;
+    width: 100%;
+    position: relative;
+    overflow: hidden;
+    border-radius: 100%;
+    cursor: pointer;
+    &::after {
+        content: "";
+        display: block;
+        width: 100%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 3;
+        border-radius: 100%;
+        transition: background-color 0.15s ease;
+        background-color: transparent;
+    }
+    &:hover {
+        &::after {
+            background-color: rgba($black, 0.4);
+        }
+        .cameraIcon {
+            fill: $white;
+        }
+    }
+    &.active::after {
+        background-color: rgba($black, 0.4);
+    }
+    &.disabled {
+        opacity: 0.5;
+        pointer-events: none;
+    }
+}
+.cameraIcon {
+    width: 40px;
+    height: 40px;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    z-index: 4;
+    transform: translate3d(-50%, -50%, 0);
+    fill: transparent;
+    transition: fill 0.2s ease;
+    &.active {
+        fill: $white;
+    }
+}
+.avatar,
+.photoPreview {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.label {
+    display: block;
+    margin-bottom: 12px;
+    &.inline {
+        display: inline-block;
+    }
+}
+.input {
+    width: 100%;
+}
+.dateInputWrapper {
+    max-width: 210px;
+}
+.dateInput {
+    width: auto;
+}
+.fieldError {
+    margin-top: 5px;
+}
+.returnLink {
+    align-self: flex-start;
+    @include mobileMiddle {
+        display: block;
+        width: 100%;
+        order: -1;
+    }
+}
+.returnBtn {
+    width: 100%;
+}
+.body {
+    background-color: $white;
+    padding: 15px;
+    border-radius: 10px;
+}
+.submitBtn {
+    margin-left: auto;
+}

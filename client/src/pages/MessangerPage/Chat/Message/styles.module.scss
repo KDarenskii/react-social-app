@@ -1,0 +1,36 @@
+@import "../../../../assets/styles/mixins.scss";
+
+.wrapper {
+    display: flex;
+    gap: 10px;
+}
+.avatar {
+    height: 40px;
+    width: 40px;
+    cursor: pointer;
+}
+.title {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 4px;
+}
+.name {
+    font-size: 14px;
+    font-weight: 500;
+    color: $darkblue;
+    cursor: pointer;
+    &:hover {
+        text-decoration: underline;
+    }
+}
+.time {
+    font-size: 13px;
+    color: $darkgrey;
+    align-self: flex-end;
+}
+.text {
+    font-size: 15px;
+    @include mobileMiddle {
+        font-size: 14px;
+    }
+}

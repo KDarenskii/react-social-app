@@ -1,0 +1,33 @@
+@import "../../../../assets/styles/vars.scss";
+
+.nav {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    z-index: 20;
+    height: 70px;
+    width: 100%;
+    background-color: $white;
+    border-top: 1px solid $grey;
+}
+.list {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+}
+.navIcon {
+    width: 20px;
+    height: 20px;
+}
+.navItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    padding: 6px 5px 3px;
+    font-size: 12px;
+    transition: color 0.15s ease;
+    &.active {
+        color: $blue;
+        font-weight: 500;
+    }
+}

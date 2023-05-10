@@ -1,0 +1,13 @@
+@import "../../assets/styles/mixins.scss";
+
+.pageWrapper {
+    @include mobile {
+        padding-bottom: $mobileNavHeight;
+    }
+}
+.profile {
+    margin-bottom: 15px;
+}
+.friendsList {
+    margin-bottom: 15px;
+}

@@ -1,0 +1,10 @@
+@import "../../../assets/styles/vars.scss";
+
+.label {
+    cursor: pointer;
+}
+.labelText {
+    color: $darkgrey;
+    font-size: 14px;
+    margin-bottom: 5px;
+}

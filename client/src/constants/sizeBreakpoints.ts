@@ -1,0 +1,8 @@
+export enum BREAKPOINT {
+    PC_LARGE = 1720,
+    PC = 1120,
+    TABLET = 991.98,
+    MOBILE = 767.96,
+    MOBILE_MEDIUM = 677,
+    MOBILE_SMALL = 479.98,
+}

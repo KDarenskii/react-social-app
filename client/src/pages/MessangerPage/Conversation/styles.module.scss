@@ -1,0 +1,86 @@
+@import "../../../assets/styles/mixins.scss";
+
+.conversation {
+    display: block;
+    background-color: $white;
+    padding: 15px 20px;
+    border-bottom: 1px solid $grey;
+    cursor: pointer;
+    transition: background-color 0.15s ease;
+    &:hover {
+        background-color: #f4f8ff;
+    }
+    @include mobileMiddle {
+        padding: 15px 10px;
+    }
+}
+.wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.content {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    width: 100%;
+}
+.conversationImg {
+    height: 50px;
+    width: 50px;
+    flex-shrink: 0;
+    @include mobileMiddle {
+        width: 40px;
+        height: 40px;
+    }
+}
+.info {
+    width: 100%;
+    max-width: calc(100% - 60px);
+    @include mobileMiddle {
+        max-width: calc(100% - 50px);
+    }
+}
+.title {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 10px;
+    @include mobileMiddle {
+        margin-bottom: 6px;
+    }
+}
+.name {
+    font-size: 15px;
+    font-weight: 500;
+    @include mobileMiddle {
+        font-size: 13px;
+    }
+}
+.preview {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.senderAvatar {
+    @include mobileMiddle {
+        display: none;
+    }
+}
+.senderImg {
+    width: 22px;
+    height: 22px;
+}
+.message {
+    font-size: 13px;
+    @include ellipsis(none);
+    @include mobileMiddle {
+        font-size: 12px;
+    }
+}
+.time {
+    color: $darkgrey;
+    font-size: 14px;
+    @include mobileMiddle {
+        font-size: 13px;
+    }
+}
