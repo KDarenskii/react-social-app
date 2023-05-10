@@ -11,7 +11,7 @@ import "./assets/styles/index.scss";
 
 const root = ReactDOM.createRoot(document.getElementById("root") as HTMLElement);
 root.render(
-    <BrowserRouter>
+    <BrowserRouter basename="/react-social-app">
         <Provider store={store}>
             <SocketProvider>
                 <App />
