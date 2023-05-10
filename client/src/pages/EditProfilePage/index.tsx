@@ -10,11 +10,11 @@ import FieldError from "../../components/forms/FieldError";
 import { BsCamera } from "react-icons/bs";
 import { useEditProfile } from "./useEditProfile";
 import { IoMdClose } from "react-icons/io";
+import Alert from "../../components/Alert";
+import { ALERT } from "../../constants/alert";
 import cn from "classnames";
 
 import styles from "./styles.module.scss";
-import Alert from "../../components/Alert";
-import { ALERT } from "../../constants/alert";
 
 const EditProfilePage: React.FC = () => {
     const {
