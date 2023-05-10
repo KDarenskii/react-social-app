@@ -1,11 +1,11 @@
 import React from "react";
 import { INotification } from "../../../../../../models/Notification";
-import Notification from "../Notification";
+import Notification from "../Notice";
+import { AiOutlineLeft } from "react-icons/ai";
+import EmptyList from "../../../../../../pages/FridendsPage/EmptyList";
 import cn from "classnames";
 
 import styles from "./styles.module.scss";
-import { AiOutlineLeft } from "react-icons/ai";
-import EmptyList from "../../../../../../pages/FridendsPage/EmptyList";
 
 type Props = {
     isActive: boolean;

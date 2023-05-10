@@ -2,8 +2,8 @@ import React from "react";
 import { BiBell } from "react-icons/bi";
 import Responsive from "../../../../Responsive";
 import { BREAKPOINT } from "../../../../../constants/sizeBreakpoints";
-import NotificationsMenu from "./NotificationsMenu";
-import NotificationsSiderbar from "./NotificationsSidebar";
+import NotificationsMenu from "./NoticesMenu";
+import NotificationsSiderbar from "./NoticesSidebar";
 import { useNotifications } from "./useNotifications";
 import cn from "classnames";
 

@@ -1,7 +1,7 @@
 import React from "react";
 import Container from "../../../Container";
 import { AiOutlineGlobal } from "react-icons/ai";
-import Notices from "./Notifications";
+import Notices from "./Notices";
 import UserMenu from "./UserMenu";
 
 import styles from "./styles.module.scss";

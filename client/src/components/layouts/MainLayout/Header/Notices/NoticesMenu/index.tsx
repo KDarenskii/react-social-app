@@ -1,6 +1,6 @@
 import React from "react";
 import { INotification } from "../../../../../../models/Notification";
-import Notification from "../Notification";
+import Notification from "../Notice";
 import EmptyList from "../../../../../../pages/FridendsPage/EmptyList";
 import cn from "classnames";
 
