@@ -70,3 +70,17 @@
 -   Socket.io
 -   JsonWebToken
 -   Firebase/Firstore database
+## Demo:
+## Страница новостей
+![social1](https://github.com/KDarenskii/react-social-app/assets/111995279/f2480437-7675-49f5-bd3e-4a52d1dfdaf0)
+
+## Страница профиля
+![social2](https://github.com/KDarenskii/react-social-app/assets/111995279/95201502-f95e-4692-a5a6-7f88a1953a02)
+
+## Страница друзей
+![social3](https://github.com/KDarenskii/react-social-app/assets/111995279/b02c01a1-1afc-4233-af4a-909c5d447824)
+
+![social4](https://github.com/KDarenskii/react-social-app/assets/111995279/fc417536-e937-44c0-bb50-0db5e3a6978a)
+
+## Страница сообщений
+![social5](https://github.com/KDarenskii/react-social-app/assets/111995279/04b6cd60-2134-44c0-83d5-56ff23808f0e)
